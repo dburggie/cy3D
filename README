@@ -1,7 +1,0 @@
-
-This python module is for the simulation 3D world.
-
-The dependencies for this module are outlined at the bottom of this readme.
-
-DEPENDENCIES:
-    cProfile -- for profiling of tests

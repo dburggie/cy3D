@@ -4,11 +4,14 @@
 *.pdf
 *.png
 *.b
+*.so
+*.o
 *~
 
 # omit notes directory
 notes/
 test/samples/
+build/
 
 # omit code generating tools
 tool*.py
