@@ -1,6 +1,6 @@
 #include <cmath>
 
-using namespace std;
+using namespace cy3D;
 
 class Vector
 {
@@ -52,7 +52,7 @@ double Vector::length()
 // transformations and useful functions
 Vector Vector::dup()
 {
-    return Vector(x, y, z);
+    return new Vector(x, y, z);
 }
 
 Vector Vector::copy(Vector v)
@@ -65,7 +65,7 @@ Vector Vector::copy(Vector v)
 
 Vector Vector::cross(Vector v)
 {
-    return Vector(
+    return new Vector(
         y * v.z + z * v.y,
         z * v.x + x * v.z,
         x * v.y + y * v.x
@@ -122,7 +122,7 @@ Vector Vector::operator=(Vector v)
 
 Vector Vector::operator-(Vector v)
 {
-    return Vector(
+    return new Vector(
         x - v.x,
         y - v.y,
         z - v.z
